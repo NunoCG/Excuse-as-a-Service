@@ -56,3 +56,5 @@ docker run -d --name excuse-as-a-service -p 8080:8080 excuse-service:dev
 > **__Disclaimer__**: No cats were harmed in the making of these excuses. Actually, we’re not sure. Maybe your mileage may vary.
 
 Enjoy turning every “Can you…?” into “Sorry, can’t.” 😎
+
+<!-- GitAds-Verify: KD3B5RF3PXJJWCU1RXU1FAWQL8C2PM8B -->
