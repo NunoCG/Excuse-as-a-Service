@@ -16,6 +16,18 @@ All courtesy of caffeine, questionable deadlines, and a dash of cosmic chaos.
 
 ## 🚀 Quickstart
 
+### 🔥 API server
+
+**Base URL**
+
+```bash
+https://eaas-nunocg.leapcell.app
+```
+
+**Methods**: `GET`, `POST`
+
+### 💻 Local Environment
+
 1. **Build the image**:
 
 ```bash
@@ -28,10 +40,23 @@ docker build -t excuse-service:dev .
 docker run -d --name excuse-as-a-service -p 8080:8080 excuse-service:dev
 ```
 
-3. **Get excuses**:
+### 🔄 Example Request and Response
 
-- **GET** `/excuse` → {"excuse":"My cat deployed to production by accident."}
-- **POST** `/excuse` with `{"request":"Yes, please?"}` → {"response":"Nope. Dream on."}
+- **GET** `/excuse`
+
+```json
+{
+  "excuse":"My cat deployed to production by accident."
+}
+```
+
+- **POST** `/excuse` with the payload `{"request":"Yes, please?"}`
+
+```json
+{
+  "response":"Nope. Dream on."
+}
+```
 
 ## 🧠 How It Works
 
