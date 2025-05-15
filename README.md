@@ -2,6 +2,9 @@
 
 “I’m not lazy, I’m just on energy-saving mode.” — Definitely not a developer
 
+## GitAds Sponsored
+[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=nunocg/excuse-as-a-service@github)](https://gitads.dev/v1/ad-track?source=nunocg/excuse-as-a-service@github)
+
 ## What Is This?
 
 A micro-API that delivers:
