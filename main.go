@@ -4,10 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"log"
-	"math/rand"
 	"net/http"
 	"strings"
-	"time"
 )
 
 // noResponse matches the JSON schema returned by the public NaaS HTTP API.
@@ -71,9 +69,6 @@ func handleExcuse(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	// Seed the random number generator for getRandomExcuse.
-	rand.Seed(time.Now().UnixNano())
-
 	http.HandleFunc("/excuse", handleExcuse)
 	http.HandleFunc("/healthz", func(w http.ResponseWriter, _ *http.Request) {
 		w.WriteHeader(http.StatusOK)
